@@ -1,113 +1,147 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-  <title>Room Check Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0; /* Resetting body margin */
+ <title>Room Check Form</title>
+ <style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 10px; /* Adjusted top margin */
+  margin-bottom: 10px; /* Adjusted bottom margin */
+}
+
+.table-container {
+  margin-top: 0px;
+  max-width: 4000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin-top: -360px; /* Added rule to move table closer to image */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #808080;
+}
+
+th:first-child,
+td:first-child {
+  min-width: 100px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  resize: vertical;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+    #currentDate {
+      margin-top: 0;
     }
-    h1 {
-      text-align: center;
-      color: #333;
-      margin-top: 10px; /* Reduced margin at the top */
-      margin-bottom: 10px; /* Adjusted bottom margin */
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-    }
-    th, td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 10px;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    th:first-child,
-    td:first-child {
-      min-width: 100px;
-    }
-    input[type="checkbox"] {
-      transform: scale(1.5);
-    }
-    textarea {
-      width: 100%;
-      height: 80px;
-      resize: vertical;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
+
+    @media print {
+      table {
+        table-layout: auto;
+      }
     }
   </style>
 </head>
 <body>
 
   <h1>Room Check Form</h1>
-  <img src="tvl.jpg" alt="Travelodge-SouthHolland" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-  <table>
-    <thead>
-      <tr>
-        <th>Room Number</th>
-        <th>Main Door</th>
-        <th>Floor</th>
-        <th>AC</th>
-        <th>TV</th>
-        <th>Lamps</th>
-        <th>Mirror</th>
-        <th>Bed</th>
-        <th>Pillows</th>
-        <th>Sheets</th>
-        <th>Telephone</th>
-        <th>Sink</th>
-        <th>Faucet</th>
-        <th>Bathtub</th>
-        <th>Bath Tap & Shower</th>
-        <th>Exhaust</th>
-        <th>Toilet</th>
-        <th>Towels</th>
-        <th>Comment</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-    <td>Room 102</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><textarea></textarea></td>
-   </tr>
+  <img src="C:\Users\PNW_checkout\Documents\SE\tvl.svg" alt="Travelodge-SouthHolland">
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Room Number</th>
+          <!-- Add other table headers here -->
+          <th>Door</th>
+          <th>Floor</th>
+          <th>AC</th>
+          <th>TV</th>
+          <th>Lamps</th>
+          <th>Mirror</th>
+          <th>Bed</th>
+          <th>Phone</th>
+          <th>Sink</th>
+          <th>Faucet</th>
+          <th>Tub</th>
+          <th>Tap & Shower</th>
+          <th>Exhaust</th>
+          <th>Toilet</th>
+          <th>Towels</th>
+          <th>Comment</th>
+        </tr>
+ </thead>
+ <tbody>
+   <tr>
+  <td>Room 102</td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><input type="checkbox"></td>
+  <td><textarea></textarea></td>
+  </tr>
    <tr>
     <td>Room 104</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -142,14 +176,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 106</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -184,14 +214,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 108</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -226,14 +252,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 110</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -268,14 +290,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 112</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -310,14 +328,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 114</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -352,14 +366,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 116</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -394,14 +404,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 118</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -436,14 +442,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 120</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -478,14 +480,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 122</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -520,14 +518,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 124</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -562,14 +556,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 126</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -604,14 +594,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 202</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -646,14 +632,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 204</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -688,14 +670,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 208</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -730,14 +708,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 212</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -772,14 +746,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 214</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -814,14 +784,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
     <td>Room 216</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
@@ -856,14 +822,10 @@
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
     <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
     <td><textarea></textarea></td>
    </tr>
    <tr>
         <td>Room 218</td>
-        <td><input type="checkbox"></td>
-        <td><input type="checkbox"></td>
         <td><input type="checkbox"></td>
         <td><input type="checkbox"></td>
         <td><input type="checkbox"></td>
@@ -898,14 +860,10 @@
             <td><input type="checkbox"></td>
             <td><input type="checkbox"></td>
             <td><input type="checkbox"></td>
-            <td><input type="checkbox"></td>
-            <td><input type="checkbox"></td>
             <td><textarea></textarea></td>
            </tr>
            <tr>
                 <td>Room 220</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
                 <td><input type="checkbox"></td>
                 <td><input type="checkbox"></td>
                 <td><input type="checkbox"></td>
@@ -940,14 +898,10 @@
                     <td><input type="checkbox"></td>
                     <td><input type="checkbox"></td>
                     <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
                     <td><textarea></textarea></td>
                    </tr>
                    <tr>
                         <td>Room 222</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
                         <td><input type="checkbox"></td>
                         <td><input type="checkbox"></td>
                         <td><input type="checkbox"></td>
@@ -982,14 +936,10 @@
                             <td><input type="checkbox"></td>
                             <td><input type="checkbox"></td>
                             <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
                             <td><textarea></textarea></td>
                            </tr>
                            <tr>
                                 <td>Room 224</td>
-                                <td><input type="checkbox"></td>
-                                <td><input type="checkbox"></td>
                                 <td><input type="checkbox"></td>
                                 <td><input type="checkbox"></td>
                                 <td><input type="checkbox"></td>
@@ -1024,14 +974,10 @@
                                     <td><input type="checkbox"></td>
                                     <td><input type="checkbox"></td>
                                     <td><input type="checkbox"></td>
-                                    <td><input type="checkbox"></td>
-                                    <td><input type="checkbox"></td>
                                     <td><textarea></textarea></td>
                                    </tr>
                                    <tr>
                                         <td>Room 226</td>
-                                        <td><input type="checkbox"></td>
-                                        <td><input type="checkbox"></td>
                                         <td><input type="checkbox"></td>
                                         <td><input type="checkbox"></td>
                                         <td><input type="checkbox"></td>
@@ -1066,14 +1012,10 @@
                                             <td><input type="checkbox"></td>
                                             <td><input type="checkbox"></td>
                                             <td><input type="checkbox"></td>
-                                            <td><input type="checkbox"></td>
-                                            <td><input type="checkbox"></td>
                                             <td><textarea></textarea></td>
                                            </tr>
                                            <tr>
                                                 <td>Room 228</td>
-                                                <td><input type="checkbox"></td>
-                                                <td><input type="checkbox"></td>
                                                 <td><input type="checkbox"></td>
                                                 <td><input type="checkbox"></td>
                                                 <td><input type="checkbox"></td>
@@ -1102,6 +1044,11 @@
   function printPage() {
    window.print();
   }
+// JavaScript to display the current date
+    const currentDateElement = document.getElementById('currentDate');
+    const currentDate = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    currentDateElement.textContent = 'Date: ' + currentDate;
+  </script>
  </script>
 
 </body>
